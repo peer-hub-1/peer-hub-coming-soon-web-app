@@ -26,8 +26,7 @@ export default function Home() {
         <div className="flex flex-grow flex-col gap-8 items-center justify-center px-4">
           <h1 className="text-3xl md:text-6xl font-bold ">Coming Soon!</h1>
           <p className="text-base md:text-xl">
-            We're working hard to bring something amazing your way. Stay tuned
-            for the launch of PeerHub!
+            Stay tuned for the launch of PeerHub!
           </p>
         </div>
         <div className="flex gap-4 sm:gap-12 pb-10 flex-wrap">
