@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navyBlue: "#243037",
+        peerHubOrange: "#F15d22",
       },
     },
   },
