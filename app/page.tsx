@@ -2,7 +2,7 @@ import Image from "next/image";
 import bg from "@/public/nasa-foto-snimok-kosmos.jpg";
 import logo from "@/public/PeerHub Logo-07.svg";
 import Link from "next/link";
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
