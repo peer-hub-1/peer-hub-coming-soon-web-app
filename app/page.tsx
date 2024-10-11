@@ -30,16 +30,19 @@ export default function Home() {
           </p>
         </div>
         <div className="flex gap-4 sm:gap-12 pb-10 flex-wrap">
-          <Link href="https://instagram.com/peerhub" target="_blank">
+          <Link href="https://www.instagram.com/peerhub101/" target="_blank">
             <FaInstagram size={36} />
           </Link>
-          <Link href="https://facebook.com/peerhub" target="_blank">
+          {/* <Link href="https://facebook.com/peerhub" target="_blank">
             <FaFacebook size={36} />
-          </Link>
-          <Link href="https://twitter.com/peerhub" target="_blank">
+          </Link> */}
+          {/* <Link href="https://twitter.com/peerhub" target="_blank">
             <FaTwitter size={36} />
-          </Link>
-          <Link href="https://linkedin.com/company/peerhub" target="_blank">
+          </Link> */}
+          <Link
+            href="https://www.linkedin.com/company/peer-hub/"
+            target="_blank"
+          >
             <FaLinkedin size={36} />
           </Link>
         </div>
