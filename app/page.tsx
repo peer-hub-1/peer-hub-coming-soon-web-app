@@ -1,52 +1,65 @@
-import Image from "next/image";
-import bg from "@/public/nasa-foto-snimok-kosmos.jpg";
-import logo from "@/public/PeerHub Logo-07.svg";
-import Link from "next/link";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Footer from "@/app/component/UI/footer";
+import Navbar from "@/app/component/UI/navbar";
+import ScrollSections from "./component/home/scroll-animation";
+
+const communities = [
+  { text: "Community", lang: "en" },
+  { text: "Communauté", lang: "fr" },
+  { text: "Comunidad", lang: "es" },
+  { text: "コミュニティ", lang: "ja" },
+];
 
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showHomePage, setShowHomePage] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (currentIndex < communities.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        clearInterval(timer);
+        setTimeout(() => setShowHomePage(true), 1000); // Wait 1 second before showing home page
+      }
+    }, 1000); // Change word every 1 second
+
+    return () => clearInterval(timer);
+  }, [currentIndex]);
+
   return (
-    <div
-      className="w-full h-screen bg-black flex flex-col"
-      style={{
-        backgroundImage: `url(${bg.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <Image
-        src={logo}
-        alt="PeerHub Logo"
-        className="m-12 rounded-full"
-        width={100}
-        height={100}
-      />
-      <div className="flex flex-col flex-grow justify-center items-center gap-6 text-white text-center">
-        <div className="flex flex-grow flex-col gap-8 items-center justify-center px-4">
-          <h1 className="text-3xl md:text-6xl font-bold ">Coming Soon!</h1>
-          <p className="text-base md:text-xl">
-            Stay tuned for the launch of PeerHub!
-          </p>
-        </div>
-        <div className="flex gap-4 sm:gap-12 pb-10 flex-wrap">
-          <Link href="https://www.instagram.com/peerhub101/" target="_blank">
-            <FaInstagram size={36} />
-          </Link>
-          {/* <Link href="https://facebook.com/peerhub" target="_blank">
-            <FaFacebook size={36} />
-          </Link> */}
-          {/* <Link href="https://twitter.com/peerhub" target="_blank">
-            <FaTwitter size={36} />
-          </Link> */}
-          <Link
-            href="https://www.linkedin.com/company/peer-hub/"
-            target="_blank"
+    <div className="flex flex-col items-center justify-center min-w-full">
+      <AnimatePresence mode="wait">
+        {!showHomePage ? (
+          <motion.div
+            key="hello"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-6xl font-bold font-Berlin absolute top-0 min-w-full h-screen flex items-center justify-center min-h-scree bg-navyBlue text-white"
           >
-            <FaLinkedin size={36} />
-          </Link>
-        </div>
-      </div>
+            {communities[currentIndex].text}
+          </motion.div>
+        ) : (
+          <>
+            <Navbar />
+            <motion.div
+              key="homepage"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center w-full"
+            >
+              <ScrollSections />
+            </motion.div>
+            <Footer />
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
