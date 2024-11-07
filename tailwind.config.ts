@@ -8,9 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Berlin: ["Berlin", "sans-serif"],
+        Raleway: ["Raleway", "sans-serif"],
+      },
       colors: {
         navyBlue: "#243037",
         peerHubOrange: "#F15d22",
+        navbg: "#1C2E38",
       },
     },
   },
