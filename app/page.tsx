@@ -3,14 +3,18 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/component/UI/footer";
-import Navbar from "@/app/component/UI/navbar";
-import ScrollSections from "./component/home/scroll-animation";
+import HorizontalScrollSections from "./component/home/HorizontalScrollSections";
+import Header from "./component/UI/Header";
 
 const communities = [
-  { text: "Community", lang: "en" },
-  { text: "Communauté", lang: "fr" },
-  { text: "Comunidad", lang: "es" },
-  { text: "コミュニティ", lang: "ja" },
+  { text: "PeerHub", lang: "en" },
+  { text: "पीयरहब ", lang: "fr" },
+  { text: "பீர்ஹப் ", lang: "es" },
+  { text: "పీర్‌హబ్ ", lang: "ja" },
+  { text: "পিয়ারহাব ", lang: "en" },
+  { text: "ಪೀರ್‌ಹಬ್ ", lang: "ko" },
+  { text: "പീർഹബ് ", lang: "de" },
+  { text: "ਪੀਰਹਬ ", lang: "hi" },
 ];
 
 export default function Home() {
@@ -46,16 +50,15 @@ export default function Home() {
           </motion.div>
         ) : (
           <>
-            <Navbar />
-            <motion.div
-              key="homepage"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center w-full"
-            >
-              <ScrollSections />
-            </motion.div>
+            <Header>
+              <h1 className="md:text-[10rem] sm:text-8xl text-6xl  text-peerHubOrange font-Berlin">
+                PeerHub
+              </h1>
+              <p className=" sm:text-xl md:text-3xl text-white text-center">
+                This Hub is not banned !
+              </p>
+            </Header>
+            <HorizontalScrollSections />
             <Footer />
           </>
         )}

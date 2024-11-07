@@ -13,7 +13,11 @@ interface Block {
   position: { top: number; left: number };
 }
 
-export default function HomePageHeroSection() {
+export default function HomePageHeroSection({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [blocks, setBlocks] = useState<Block[]>([]);
 
@@ -52,36 +56,6 @@ export default function HomePageHeroSection() {
         image: hover6,
         position: { top: 0, left: 0 },
       },
-      {
-        id: 7,
-        image: hover1,
-        position: { top: 0, left: 0 }, // Will be set correctly below
-      },
-      {
-        id: 8,
-        image: hover2,
-        position: { top: 0, left: 0 },
-      },
-      {
-        id: 9,
-        image: hover3,
-        position: { top: 0, left: 0 },
-      },
-      {
-        id: 10,
-        image: hover4,
-        position: { top: 0, left: 0 },
-      },
-      {
-        id: 11,
-        image: hover5,
-        position: { top: 0, left: 0 },
-      },
-      {
-        id: 12,
-        image: hover6,
-        position: { top: 0, left: 0 },
-      },
     ];
 
     const setRandomPosition = (block: Block) => {
@@ -108,14 +82,9 @@ export default function HomePageHeroSection() {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden font-Raleway">
-      <div className="absolute inset-0 flex items-center justify-center flex-col">
-        <h1 className="md:text-[10rem] sm:text-8xl text-6xl  text-peerHubOrange font-Berlin">
-          PeerHub
-        </h1>
-        <p className=" sm:text-xl md:text-3xl text-white">
-          A visually appealing banner that introduces Services{" "}
-        </p>
+    <div className="relative h-[calc(100dvh_-_70px)] md:h-[calc(100dvh_-_85px)] w-full overflow-hidden font-Raleway">
+      <div className="absolute inset-0 flex items-center justify-center flex-col p-2">
+        {children}
       </div>
       {blocks.map((block, index) => (
         <div
@@ -131,16 +100,16 @@ export default function HomePageHeroSection() {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <div
-            className={`absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-white shadow-lg transition-all duration-300 ease-in-out ${
+            className={`absolute left-1/2 top-1/2 size-56 -translate-x-1/2 -translate-y-1/2 transform rounded-full shadow-lg transition-all duration-300 ease-in-out ${
               hoveredIndex === index
                 ? "scale-100 opacity-100"
                 : "scale-0 opacity-0"
             }`}
           >
             <Image
-              src={block.image}
+              src="/home/hoverGIF.gif"
               alt={`Circular image ${block.id}`}
-              className="h-full w-full rounded-full object-cover"
+              className="w-full aspect-square object-cover rounded-full"
               width={64}
               height={64}
             />

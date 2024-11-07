@@ -8,17 +8,22 @@ import Link from "next/link";
 import Image from "next/image";
 import classNames from "classnames";
 import logo from "@/public/PeerHub Logo-07.svg";
+import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Committee", href: "/team", current: false },
-  { name: "Knowledge Vault", href: "/projects", current: false },
-  { name: "Events", href: "/calendar", current: false },
+  { name: "Home", href: "/", active: true },
+  { name: "Community", href: "/community", active: true },
+  { name: "Knowledge Vault", href: "/projects", active: false },
+  { name: "Events", href: "/calendar", active: false },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
-    <Disclosure as="nav" className="bg-gray-800 w-full font-Raleway">
+    <Disclosure
+      as="nav"
+      className="bg-navbg w-full font-Raleway sticky top-0 z-20"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between">
           <div className="flex flex-1 items-center sm:items-stretch sm:justify-start py-5">
@@ -37,12 +42,13 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    aria-current={item.current ? "page" : undefined}
+                    // aria-current={item.current ? "page" : undefined}
                     className={classNames(
-                      item.current
+                      pathname === item.href
                         ? "bg-white text-black"
                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-3xl px-4 py-2 text-lg font-medium pointer-events-none"
+                      !item.active && "pointer-events-none",
+                      "rounded-3xl px-4 py-2 text-lg font-medium"
                     )}
                   >
                     {item.name}
@@ -76,12 +82,13 @@ const Navbar = () => {
               key={item.name}
               as={Link}
               href={item.href}
-              aria-current={item.current ? "page" : undefined}
+              // aria-current={item.current ? "page" : undefined}
               className={classNames(
-                item.current
+                pathname === item.href
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium pointer-events-none"
+                !item.active && "pointer-events-none",
+                "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
               {item.name}

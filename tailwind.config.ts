@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         navyBlue: "#243037",
         peerHubOrange: "#F15d22",
+        navbg: "#1C2E38",
       },
     },
   },
