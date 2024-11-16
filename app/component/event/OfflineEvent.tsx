@@ -31,7 +31,7 @@ const data = [
 
 const OfflineEvent = () => {
   return (
-    <div className="h-screen w-full p-4 md:p-8">
+    <div className="w-full p-4 md:p-8">
       <h1 className="md:text-7xl sm:text-5xl text-3xl  text-white font-Berlin">
         Event At <HighlightText text="Offline" />
       </h1>
