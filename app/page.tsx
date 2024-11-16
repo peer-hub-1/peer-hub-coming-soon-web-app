@@ -29,7 +29,7 @@ export default function Home() {
         clearInterval(timer);
         setTimeout(() => setShowHomePage(true), 1000); // Wait 1 second before showing home page
       }
-    }, 1000); // Change word every 1 second
+    }, 500); // Change word every 0.5 second
 
     return () => clearInterval(timer);
   }, [currentIndex]);
