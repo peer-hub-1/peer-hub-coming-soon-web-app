@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SocialHub = () => {
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="flex flex-col gap-4 p-4  min-h-screen justify-center">
       <div className="flex justify-between mb-24">
         <Link
           href=""
@@ -103,7 +103,7 @@ const SocialHub = () => {
           className=" border-white rounded-full relative top-3 min-w-fit"
         >
           <Image
-            src="/social hub/youtube.png"
+            src="/social hub/youTube.png"
             alt=""
             className="size-11 md:size-24"
             width={90}

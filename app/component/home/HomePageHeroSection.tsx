@@ -82,7 +82,7 @@ export default function HomePageHeroSection({
   }, []);
 
   return (
-    <div className="relative h-[calc(100dvh_-_70px)] md:h-[calc(100dvh_-_85px)] w-full overflow-hidden font-Raleway">
+    <div className="relative h-screen w-full overflow-hidden font-Raleway">
       <div className="absolute inset-0 flex items-center justify-center flex-col p-2">
         {children}
       </div>
