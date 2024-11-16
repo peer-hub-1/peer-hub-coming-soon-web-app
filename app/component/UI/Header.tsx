@@ -5,8 +5,8 @@ import Navbar from "./navbar";
 const Header = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <HomePageHeroSection>{children}</HomePageHeroSection>
       <Navbar />
+      <HomePageHeroSection>{children}</HomePageHeroSection>
     </>
   );
 };

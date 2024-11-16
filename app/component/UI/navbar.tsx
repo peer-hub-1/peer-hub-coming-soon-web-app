@@ -13,8 +13,8 @@ import { usePathname } from "next/navigation";
 const navigation = [
   { name: "Home", href: "/", active: true },
   { name: "Community", href: "/community", active: true },
-  { name: "Knowledge Vault", href: "/projects", active: false },
-  { name: "Events", href: "/calendar", active: false },
+  { name: "Knowledge Vault", href: "/knowledge-vault", active: true },
+  { name: "Events", href: "/events", active: true },
 ];
 
 const Navbar = () => {

@@ -12,7 +12,7 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true, // Enable auto-scrolling
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024, // Desktop
@@ -33,7 +33,7 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
   const sliderRef = useRef<Slider | null>(null);
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-5xl mx-auto">
       <Slider ref={sliderRef} {...settings}>
         {children}
       </Slider>

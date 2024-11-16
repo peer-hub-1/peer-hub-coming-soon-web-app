@@ -34,7 +34,7 @@ const MapSection = () => {
         />
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
       </div>
-      <div className="mb-4 h-64 md:h-96 relative">
+      <div className="mb-4 h-64 md:h-96 relative -z-10">
         <MapContainerWithNoSSR
           center={[15.87, 100.9925]}
           zoom={5}

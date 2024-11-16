@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../UI/Carousel";
 import Image from "next/image";
 import HighlightText from "../UI/HighlightText";
+import Button from "../UI/Button";
 
 const carouselData = [
   { image: "/tribe/Tech Clubs.png", name: "Tech Clubs" },
@@ -33,7 +34,7 @@ const carouselData = [
 
 const TribeSection = () => {
   return (
-    <div className="py-8">
+    <div className="py-8 min-h-screen flex flex-col gap-12 items-center justify-center">
       <h1 className="text-3xl font-bold mb-2 text-center font-Berlin md:text-6xl text-white">
         Find your <HighlightText text="Tribe" />
       </h1>
@@ -44,8 +45,8 @@ const TribeSection = () => {
               src={data.image}
               alt={data.name}
               className=" mx-auto"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
             />
             <h3 className="text-3xl font-bold mt-4 font-Raleway">
               {data.name}
@@ -53,6 +54,9 @@ const TribeSection = () => {
           </div>
         ))}
       </Carousel>
+      <div className="py-6 flex justify-center">
+        <Button label="Explore More" />
+      </div>
     </div>
   );
 };
