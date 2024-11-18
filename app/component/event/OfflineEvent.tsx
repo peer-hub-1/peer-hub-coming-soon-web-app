@@ -36,8 +36,11 @@ const OfflineEvent = () => {
         Event At <HighlightText text="Offline" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8">
-        Getting students ready for today’s industry needs with Haas and Autodesk
-        Fusion curriculum. Revealing perspectives technology.
+        Experience the energy of PeerHub’s offline events! From inspiring
+        TedTalks and lively concerts to vibrant festivals, open mics, and
+        industry conclaves, our events offer hands-on experiences, networking,
+        and a platform to showcase your talents. These events are designed to
+        help you learn, grow, and make lasting connections
       </p>
       <Carousel>
         {data.map((item) => (

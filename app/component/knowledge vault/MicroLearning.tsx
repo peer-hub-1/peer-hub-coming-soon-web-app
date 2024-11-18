@@ -24,8 +24,14 @@ const MicroLearning = () => {
         Micro <HighlightText text="Learning" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8 text-center">
-        Getting students ready for today’s industry needs with Haas and Autodesk
-        Fusion curriculum. Revealing perspectives technology.
+        Micro-Learning offers curated playlists of short, engaging videos
+        designed to provide a comprehensive overview of specific industries.
+        Whether it's Design, Tech, Finance, or Engineering, these playlists
+        introduce you to the industry's core concepts, specializations, career
+        pathways, and basic skills. Featuring expert insights and roundtable
+        discussions, Micro-Learning serves as your first step toward exploring
+        and understanding an industry, empowering you to make informed decisions
+        about your future.
       </p>
       <Carousel>
         {data.map((item) => (
