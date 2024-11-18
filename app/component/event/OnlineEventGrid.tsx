@@ -60,8 +60,11 @@ export default function OnlineEventGrid() {
         Event At <HighlightText text="Online" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8">
-        Getting students ready for today’s industry needs with Haas and Autodesk
-        Fusion curriculum. Revealing perspectives technology.
+        PeerHub’s online events bring learning and networking to your
+        fingertips. From webinars and workshops to hackathons and expert talks,
+        our virtual events are designed to help you expand your skills, connect
+        with industry leaders, and explore new opportunities — all from the
+        comfort of your home.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[100px]">
         {items.map((item, index) => (

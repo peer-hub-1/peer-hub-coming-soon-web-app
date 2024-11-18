@@ -28,8 +28,16 @@ const FoundationLabs = () => {
         Foundation <HighlightText text="Labs" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8 text-center">
-        Revealing perspectives from Autodesk Learning project-based skills with
-        cloud-based design and make technology.
+        Foundation Labs are carefully designed Fundamental Courses tailored for
+        seeking to master the basics of specific domains. These hands-on,
+        beginner-friendly courses cover essential concepts and skills, laying
+        the groundwork for a successful journey in fields like engineering,
+        technology, and beyond. What makes Foundation Labs unique is that they
+        are led by senior college students in their 3rd or 4th year, who are
+        experts in their respective domains. Their peer-to-peer teaching
+        approach ensures relatable, engaging, and practical learning
+        experiences. With Foundation Labs, students gain the confidence and
+        knowledge needed to thrive in their chosen fields.
       </p>
       <Carousel>
         {data.map((item) => (

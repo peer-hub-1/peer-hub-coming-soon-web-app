@@ -28,8 +28,15 @@ const FellowshipProgram = () => {
         Fellowship <HighlightText text="Program" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8 text-center">
-        Pellentesque fringilla, massa sit amet feugiat mollis, leo turpis
-        elementum justo, vel consequat ex urna ut massa maecenas justo sapien.
+        The 7-month Fellowship Program combines 5 months of live advanced
+        training with 2 months of live projects, offering in-depth
+        specialization and hands-on industry exposure. Beyond skill-building,
+        fellows gain access to freelancing opportunities, expert mentoring for
+        startup ideas, office space, and support in development and marketing to
+        bring their entrepreneurial visions to life. Additionally, fellows can
+        share their knowledge by teaching Foundation Labs and earning while they
+        learn. This program empowers students to excel in their fields, launch
+        startups, and explore diverse career pathways.
       </p>
       <Carousel>
         {data.map((item) => (
