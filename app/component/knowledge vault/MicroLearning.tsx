@@ -69,7 +69,7 @@ const MicroLearning = () => {
                 src={item.image}
                 alt=""
                 fill
-                className="object-cover rounded-2xl -z-10 opacity-70"
+                className="object-cover rounded-2xl -z-10 opacity-60"
               />
               <p className="flex-grow text-center text-white text-xl flex justify-center items-center">
                 Coming Soon

@@ -28,7 +28,7 @@ function NewHeroSection({
             {buttonLabel}
           </button>
         </div>
-        <div className="flex flex-col justify-end md:min-w-[200px] lg:min-w-[400px]">
+        <div className="flex flex-col justify-end md:min-w-[200px] lg:min-w-[450px]">
           <Image
             src={image}
             alt=""

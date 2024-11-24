@@ -7,36 +7,33 @@ const data = [
   {
     titleLine: (
       <h1 className="md:text-6xl sm:text-4xl text-2xl  text-white font-Berlin">
-        Our <HighlightText text="Community" /> Equitable access in STEM
-        education
+        A <HighlightText text="Community" /> of Doers and Dreamers.
       </h1>
     ),
     description:
-      "Learn the skills for emerging roles and future careers with Autodesk’s industry-validated learning content. Discover the content that's perfect for your learning journey or curriculum Join us to learn about the latest industry trends, connect with other members, showcase your work, and more!",
+      "PeerHub Communities bring students together to explore shared interests, exchange ideas, and grow through collaboration. Whether you're passionate about tech, design, startups, or research, our vibrant communities provide a platform to network, learn, and innovate. Join us to build lasting connections, work on exciting projects, and shape the future together!",
     buttonLabel: "Learn More",
     image: "/home/homePageCommunity.svg",
   },
   {
     titleLine: (
       <h1 className="md:text-6xl sm:text-4xl text-2xl  text-white font-Berlin">
-        Careers <HighlightText text="Knowledge" />
-        on Vault Our impact in action
+        Your One-Stop <HighlightText text="Resource" /> Hub!
       </h1>
     ),
     description:
-      "Getting students ready for today’s industry needs with Haas and Autodesk Fusion curriculum. Revealing perspectives from Autodesk Learning project-based skills with cloud-based design and make technology.",
+      "The PeerHub Knowledge Vault is designed to take you on a transformative learning journey. From foundational skills to advanced industry insights, it equips you with everything you need to excel in your chosen career. Unlock your potential and achieve your breakthroughs!",
     buttonLabel: "Read More",
     image: "/home/homePageKnowledgeVault.svg",
   },
   {
     titleLine: (
       <h1 className="md:text-6xl sm:text-4xl text-2xl  text-white font-Berlin">
-        Our <HighlightText text="Events" /> The skills of the future Equitable
-        education
+        <HighlightText text="Events" /> so lit, Your future self thanks you!
       </h1>
     ),
     description:
-      "Learn the skills for emerging roles and future careers with Autodesk’s industry-validated learning content. Discover the content that's perfect for your learning journey or curriculum Join us to learn about the latest industry trends, connect with other members, showcase your work, and more!",
+      "PeerHub Events bring students together through dynamic online and offline experiences. From interactive webinars, hackathons, and bootcamps online to vibrant offline fests, designathons, open mics, and industry conclaves, our events are designed to spark creativity and foster growth. Whether you're learning from experts, showcasing your talents, or building connections, PeerHub Events offer opportunities to grow, collaborate, and leave your mark. Join us to be part of something extraordinary!",
     buttonLabel: "About Us",
     image: "/home/homePageEvents.svg",
   },

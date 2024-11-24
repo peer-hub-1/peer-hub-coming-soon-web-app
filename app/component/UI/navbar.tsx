@@ -38,7 +38,7 @@ const Navbar = () => {
               />
             </div>
             <div className="hidden lg:ml-6 md:block sm:flex-grow">
-              <div className="flex gap-6 lg:gap-16 justify-center">
+              <div className="flex gap-6 lg:gap-12 justify-center">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
