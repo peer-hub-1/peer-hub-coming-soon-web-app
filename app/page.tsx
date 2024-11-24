@@ -3,8 +3,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "@/app/component/UI/footer";
-import HorizontalScrollSections from "./component/home/HorizontalScrollSections";
 import Header from "./component/UI/Header";
+import NewHomePageSection from "./component/home/NewHomePageSection";
+import Navbar from "./component/UI/navbar";
+import NewHomePageHeroSection from "./component/home/NewHomePageHeroSection";
 
 const communities = [
   { text: "PeerHub", lang: "en" },
@@ -35,7 +37,7 @@ export default function Home() {
   }, [currentIndex]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-w-full">
+    <div className="flex flex-col items-center justify-center min-w-full bg-[#FBF8F6]">
       <AnimatePresence mode="wait">
         {!showHomePage ? (
           <motion.div
@@ -50,15 +52,9 @@ export default function Home() {
           </motion.div>
         ) : (
           <>
-            <Header>
-              <h1 className="md:text-[10rem] sm:text-8xl text-6xl  text-peerHubOrange font-Berlin">
-                PeerHub
-              </h1>
-              <p className=" sm:text-xl md:text-3xl text-white text-center">
-                This Hub is not banned !
-              </p>
-            </Header>
-            <HorizontalScrollSections />
+            <Navbar />
+            <NewHomePageHeroSection />
+            <NewHomePageSection />
             <Footer />
           </>
         )}

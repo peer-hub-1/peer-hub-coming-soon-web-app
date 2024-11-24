@@ -5,19 +5,79 @@ import Button from "../UI/Button";
 
 const data = [
   {
-    image: "/foundation labs/electricalBg.png",
-    topImage: "/foundation labs/Electrical.svg",
-    title: "Electrical",
+    image: "/foundation labs/Python Programming.jpg",
+    topImage: "/foundation labs/Python Programming.jpg",
+    title: "Python Programming",
   },
   {
-    image: "/foundation labs/civilBg.png",
+    image: "/foundation labs/Java programming.jpg",
     topImage: "/foundation labs/Civil.svg",
-    title: "Civil",
+    title: "Java programming",
   },
   {
-    image: "/foundation labs/mechanicalBg.png",
+    image: "/foundation labs/CC++.jpg",
     topImage: "/foundation labs/Mechanical.svg",
-    title: "Mechanical",
+    title: "C/C++",
+  },
+  {
+    image: "/foundation labs/SQL NoSQL.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "SQL/ NoSQL",
+  },
+  {
+    image: "/foundation labs/LinuxUnix.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Linux/Unix",
+  },
+  {
+    image: "/foundation labs/FrontEnd Development.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "FrontEnd Development",
+  },
+  {
+    image: "/foundation labs/UIUX Design.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "UI/UX Design",
+  },
+  {
+    image: "/foundation labs/Cybersecurity Basics.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Cybersecurity Basics",
+  },
+  {
+    image: "/foundation labs/Cloud Computing Essentials.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Cloud Computing Essentials",
+  },
+  {
+    image: "/foundation labs/Marketing Fundamentals.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Marketing Fundamentals",
+  },
+  {
+    image: "/foundation labs/Financial Analysis with Excel.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Financial Analysis with Excel",
+  },
+  {
+    image: "/foundation labs/Data Visualization with Power BITableau.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Data Visualization with Power BI/Tableau",
+  },
+  {
+    image: "/foundation labs/Supply Chain and Logistics Management Basics.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Supply Chain and Logistics Management Basics",
+  },
+  {
+    image: "/foundation labs/Business Communication Skills.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Business Communication Skills",
+  },
+  {
+    image: "/foundation labs/Human Resource Analytics.jpg",
+    topImage: "/foundation labs/Mechanical.svg",
+    title: "Human Resource Analytics",
   },
 ];
 
@@ -42,20 +102,20 @@ const FoundationLabs = () => {
       <Carousel>
         {data.map((item) => (
           <div className="h-[440px] rounded-2xl font-Raleway px-4">
-            <div className="flex flex-col justify-between relative h-full p-4">
+            <div className="flex flex-col justify-end relative h-full p-4">
               <Image
                 src={item.image}
                 alt=""
                 fill
-                className="object-cover rounded-2xl -z-10 opacity-50"
+                className="object-cover rounded-2xl -z-10 opacity-80"
               />
-              <Image
+              {/* <Image
                 src={item.topImage}
                 alt=""
                 width={80}
                 height={80}
                 className="relative -z-10"
-              />
+              /> */}
               <p className="text-xl font-semibold text-white">{item.title}</p>
             </div>
           </div>

@@ -4,16 +4,44 @@ import Image from "next/image";
 
 const data = [
   {
-    image: "/micro learning/micro-learning-bg.png",
-    title: "Python",
+    image: "/micro learning/Music and DJing Industry.jpg",
+    title: "Music and DJing Industry ",
   },
   {
-    image: "/micro learning/micro-learning-bg.png",
-    title: "Finance",
+    image: "/micro learning/Design Industry.jpg",
+    title: "Design Industry",
   },
   {
-    image: "/micro learning/micro-learning-bg.png",
-    title: "Marketing",
+    image: "/micro learning/Finance Industry.jpg",
+    title: "Finance Industry",
+  },
+  {
+    image: "/micro learning/Gaming Industry.jpg",
+    title: "Gaming Industry",
+  },
+  {
+    image: "/micro learning/Tech Industry.jpg",
+    title: "Tech Industry",
+  },
+  {
+    image: "/micro learning/Marketing Industry.jpg",
+    title: "Marketing Industry",
+  },
+  {
+    image: "/micro learning/Start Up Industry.jpg",
+    title: "Start Up Industry",
+  },
+  {
+    image: "/micro learning/GIG Industry.jpg",
+    title: "GIG Industry",
+  },
+  {
+    image: "/micro learning/Research Industry.jpg",
+    title: "Research Industry",
+  },
+  {
+    image: "/micro learning/Energy Industry.jpg",
+    title: "Energy Industry",
   },
 ];
 
@@ -41,7 +69,7 @@ const MicroLearning = () => {
                 src={item.image}
                 alt=""
                 fill
-                className="object-cover rounded-2xl -z-10"
+                className="object-cover rounded-2xl -z-10 opacity-70"
               />
               <p className="flex-grow text-center text-white text-xl flex justify-center items-center">
                 Coming Soon
