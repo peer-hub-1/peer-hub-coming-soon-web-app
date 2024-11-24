@@ -107,7 +107,7 @@ const FoundationLabs = () => {
                 src={item.image}
                 alt=""
                 fill
-                className="object-cover rounded-2xl -z-10 opacity-80"
+                className="object-cover rounded-2xl -z-10 opacity-60"
               />
               {/* <Image
                 src={item.topImage}

@@ -94,7 +94,7 @@ const FellowshipProgram = () => {
                 src={item.image}
                 alt=""
                 fill
-                className="object-cover rounded-2xl -z-10 opacity-70"
+                className="object-cover rounded-2xl -z-10 opacity-60"
               />
               <div className="flex items-center">
                 {/* <Image
