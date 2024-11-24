@@ -5,19 +5,67 @@ import Button from "../UI/Button";
 
 const data = [
   {
-    image: "/fellowship program/French.jpg",
+    image: "/fellowship program/Full Stack Development.jpg",
     bottomImage: "/fellowship program/1.svg",
-    title: "French Language",
+    title: "Full Stack Development",
   },
   {
-    image: "/micro learning/micro-learning-bg.png",
+    image: "/fellowship program/Data Science and Machine Learning.jpg",
     bottomImage: "/fellowship program/2.svg",
-    title: "English Language",
+    title: "Data Science and Machine Learning",
   },
   {
-    image: "/fellowship program/German.jpg",
+    image: "/fellowship program/Game Development and Simulation.jpg",
     bottomImage: "/fellowship program/3.svg",
-    title: "German Language",
+    title: "Game Development and Simulation",
+  },
+  {
+    image: "/fellowship program/Cybersecurity and Ethical Hacking.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Cybersecurity and Ethical Hacking",
+  },
+  {
+    image: "/fellowship program/Cloud Computing and DevOps.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Cloud Computing and DevOps",
+  },
+  {
+    image: "/fellowship program/UIUX Design and Prototyping.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "UI/UX Design and Prototyping",
+  },
+  {
+    image: "/fellowship program/Marketing Strategy and Analytics.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Marketing Strategy and Analytics",
+  },
+  {
+    image:
+      "/fellowship program/Financial Modelling and Investment Strategies.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Financial Modelling and Investment Strategies",
+  },
+  {
+    image: "/fellowship program/Graphic and Motion Design.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Graphic and Motion Design",
+  },
+  {
+    image: "/fellowship program/Startup Incubation and Business Strategy.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Startup Incubation and Business Strategy",
+  },
+  {
+    image:
+      "/fellowship program/Advanced Supply Chain and Logistics Management.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Advanced Supply Chain and Logistics Management",
+  },
+  {
+    image:
+      "/fellowship program/Corporate Strategy and Business Development.jpg",
+    bottomImage: "/fellowship program/3.svg",
+    title: "Corporate Strategy and Business Development",
   },
 ];
 
@@ -41,21 +89,21 @@ const FellowshipProgram = () => {
       <Carousel>
         {data.map((item) => (
           <div className="h-[440px] rounded-2xl font-Raleway px-4">
-            <div className="flex flex-col justify-end relative h-full">
+            <div className="flex flex-col justify-end relative h-full p-4">
               <Image
                 src={item.image}
                 alt=""
                 fill
-                className="object-cover rounded-2xl -z-10 opacity-80"
+                className="object-cover rounded-2xl -z-10 opacity-70"
               />
               <div className="flex items-center">
-                <Image
+                {/* <Image
                   src={item.bottomImage}
                   alt=""
                   width={80}
                   height={80}
                   className="relative right-6 -z-10"
-                />
+                /> */}
                 <p className="text-xl font-semibold text-white">{item.title}</p>
               </div>
             </div>

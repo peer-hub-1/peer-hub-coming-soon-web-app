@@ -16,6 +16,7 @@ const config: Config = {
         navyBlue: "#243037",
         peerHubOrange: "#F15d22",
         navbg: "#1C2E38",
+        primaryNavyBlue: "#0B1E29",
       },
     },
   },

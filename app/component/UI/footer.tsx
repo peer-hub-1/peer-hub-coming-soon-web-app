@@ -31,15 +31,15 @@ export default function Footer() {
       links: [
         {
           name: "Community ",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Knowledge Vault",
-          href: "#",
+          href: "/knowledge-vault",
         },
         {
           name: "Events",
-          href: "#",
+          href: "/events",
         },
       ],
     },
@@ -199,7 +199,9 @@ export default function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-gray-900 pointer-events-none"
+                    className={`text-gray-600 hover:text-gray-900 ${
+                      link.href === "#" && "pointer-events-none"
+                    }`}
                   >
                     {link.name}
                   </Link>

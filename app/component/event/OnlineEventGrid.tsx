@@ -57,7 +57,7 @@ export default function OnlineEventGrid() {
   return (
     <div className="min-h-screen w-full p-4 md:p-8">
       <h1 className="md:text-7xl sm:text-5xl text-3xl  text-white font-Berlin">
-        Event At <HighlightText text="Online" />
+        PeerHub <HighlightText text="Live" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8">
         PeerHub’s online events bring learning and networking to your

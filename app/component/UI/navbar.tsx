@@ -15,6 +15,7 @@ const navigation = [
   { name: "Community", href: "/community", active: true },
   { name: "Knowledge Vault", href: "/knowledge-vault", active: true },
   { name: "Events", href: "/events", active: true },
+  { name: "Download App", href: "/", active: false },
 ];
 
 const Navbar = () => {
@@ -22,22 +23,22 @@ const Navbar = () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-navbg w-full font-Raleway sticky top-0 z-20"
+      className="bg-[#FBF8F6] w-full font-Raleway sticky top-0 z-20"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <div className="flex flex-1 items-center sm:items-stretch sm:justify-start py-5">
+          <div className="flex flex-1 items-center  sm:justify-start py-1">
             <div className="flex flex-shrink-0 items-center">
               <Image
                 alt="Your Company"
-                src={logo}
-                className="h-8 w-auto"
-                width={32}
-                height={32}
+                src="/PeerHub Logo-05.svg"
+                className="h-16 w-16"
+                width={100}
+                height={50}
               />
             </div>
-            <div className="hidden sm:ml-6 sm:block sm:flex-grow">
-              <div className="flex gap-8 md:gap-16 justify-center">
+            <div className="hidden lg:ml-6 md:block sm:flex-grow">
+              <div className="flex gap-6 lg:gap-16 justify-center">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
@@ -45,10 +46,10 @@ const Navbar = () => {
                     // aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       pathname === item.href
-                        ? "bg-white text-black"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        ? "border border-navyBlue text-navyBlue"
+                        : "text-navyBlue hover:bg-gray-700 hover:text-white",
                       !item.active && "pointer-events-none",
-                      "rounded-3xl px-4 py-2 text-lg font-medium"
+                      "rounded-3xl px-4 py-2 text-base lg:text-lg font-medium"
                     )}
                   >
                     {item.name}
@@ -57,7 +58,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 sm:hidden">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:hidden">
             {/* Mobile menu button */}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />

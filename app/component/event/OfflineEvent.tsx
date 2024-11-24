@@ -33,7 +33,7 @@ const OfflineEvent = () => {
   return (
     <div className="w-full p-4 md:p-8">
       <h1 className="md:text-7xl sm:text-5xl text-3xl  text-white font-Berlin">
-        Event At <HighlightText text="Offline" />
+        PeerHub <HighlightText text="Unplugged" />
       </h1>
       <p className=" text-white/80 font-Raleway md:text-xl my-8">
         Experience the energy of PeerHub’s offline events! From inspiring
