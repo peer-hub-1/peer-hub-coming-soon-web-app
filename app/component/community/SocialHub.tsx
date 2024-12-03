@@ -5,7 +5,10 @@ import Link from "next/link";
 
 const SocialHub = () => {
   return (
-    <div className="flex flex-col gap-4 p-4  min-h-screen justify-center">
+    <div
+      className="flex flex-col gap-4 p-4 justify-center md:my-8"
+      id="socialHub"
+    >
       <div className="flex justify-between mb-24">
         <Link
           href=""
@@ -112,12 +115,18 @@ const SocialHub = () => {
         </Link>
       </div>
       <p className="text-sm md:text-base text-center text-white font-Raleway">
-        Getting students ready for today’s industry needs with Haas and PeerHub
-        Fusion curriculum. Revealing perspectives technology.
+        Join the conversation and stay in the loop! Follow PeerHub across all
+        platforms for the latest updates, insights, and opportunities to connect
+        with like-minded students.
       </p>
-      <button className="md:py-5 md:px-12 px-6 py-2 rounded-3xl mx-auto border border-whit w-fit hidden sm:block text-center text-white font-Raleway">
+      <Link
+        href="https://www.instagram.com/peerhub101?igsh=MWxvZWhlMjkxNzk2MA=="
+        target="_blank"
+        rel="noopener noreferrer"
+        className="md:py-5 md:px-12 px-6 py-2 rounded-3xl mx-auto border border-whit w-fit hidden sm:block text-center text-white font-Raleway"
+      >
         Join the Conversation
-      </button>
+      </Link>
     </div>
   );
 };

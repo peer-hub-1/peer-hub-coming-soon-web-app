@@ -10,19 +10,19 @@ export default function Footer() {
       links: [
         {
           name: "About Us",
-          href: "#",
+          href: "/",
         },
         {
           name: "Legal",
-          href: "#",
+          href: "/",
         },
         {
           name: "Contact Us",
-          href: "#",
+          href: "/",
         },
         {
           name: "Careers",
-          href: "#",
+          href: "/",
         },
       ],
     },
@@ -48,15 +48,15 @@ export default function Footer() {
       links: [
         {
           name: "Student Chapters",
-          href: "#",
+          href: "/community",
         },
         {
           name: "PeerHub Clubs ",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Social Hub",
-          href: "#",
+          href: "/community",
         },
       ],
     },
@@ -65,82 +65,82 @@ export default function Footer() {
       links: [
         {
           name: "Tech Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Management Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Art Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Start-Up Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Engineering Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Law Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Design Clubs",
-          href: "#",
+          href: "/community",
         },
         {
           name: "Science Clubs",
-          href: "#",
+          href: "/community",
         },
       ],
     },
     {
       heading: "Knowledge Vault ",
       links: [
-        { name: "Micro-Learning Programs", href: "#" },
-        { name: "Foundation Lab", href: "#" },
-        { name: "Fellowship Programs", href: "#" },
+        { name: "Micro-Learning Programs", href: "/knowledge-vault" },
+        { name: "Foundation Lab", href: "/knowledge-vault" },
+        { name: "Fellowship Programs", href: "/knowledge-vault" },
       ],
     },
     {
       heading: "Events",
       links: [
-        { name: "Ideathons", href: "#" },
-        { name: "TedTalks", href: "#" },
-        { name: "Designathons", href: "#" },
-        { name: "Festivals ", href: "#" },
-        { name: "Hackathons", href: "#" },
-        { name: "Open Mics ", href: "#" },
-        { name: "Concerts ", href: "#" },
+        { name: "Ideathons", href: "/events" },
+        { name: "TedTalks", href: "/events" },
+        { name: "Designathons", href: "/events" },
+        { name: "Festivals ", href: "/events" },
+        { name: "Hackathons", href: "/events" },
+        { name: "Open Mics ", href: "/events" },
+        { name: "Concerts ", href: "/events" },
       ],
     },
     {
       heading: "Tech Clubs",
       links: [
-        { name: "Programming Club", href: "#" },
-        { name: "AI Club", href: "#" },
-        { name: "Data Club", href: "#" },
+        { name: "Programming Club", href: "/community" },
+        { name: "AI Club", href: "/community" },
+        { name: "Data Club", href: "/community" },
       ],
     },
     {
       heading: "Management Clubs",
       links: [
-        { name: "MBA Club", href: "#" },
-        { name: "Finance Club", href: "#" },
-        { name: "Product Club", href: "#" },
-        { name: "Marketing Club", href: "#" },
+        { name: "MBA Club", href: "/community" },
+        { name: "Finance Club", href: "/community" },
+        { name: "Product Club", href: "/community" },
+        { name: "Marketing Club", href: "/community" },
       ],
     },
     {
       heading: "Art Clubs ",
       links: [
-        { name: "Meme Club", href: "#" },
-        { name: "Photography Club", href: "#" },
-        { name: "Design Club", href: "#" },
-        { name: "Anime Club", href: "#" },
+        { name: "Meme Club", href: "/community" },
+        { name: "Photography Club", href: "/community" },
+        { name: "Design Club", href: "/community" },
+        { name: "Anime Club", href: "/community" },
       ],
     },
   ];

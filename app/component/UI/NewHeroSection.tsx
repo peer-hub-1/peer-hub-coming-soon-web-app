@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function NewHeroSection({
   title,
@@ -24,9 +25,14 @@ function NewHeroSection({
           <p className="text-navyBlue/80 font-Raleway md:text-xl md:my-8">
             {description}
           </p>
-          <button className="rounded-3xl px-4 py-1 text-base text-peerHubOrange border border-peerHubOrange w-fit md:mt-5">
+          <Link
+            href="https://www.instagram.com/peerhub101?igsh=MWxvZWhlMjkxNzk2MA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-3xl px-4 py-1 text-base text-peerHubOrange border border-peerHubOrange w-fit md:mt-5"
+          >
             {buttonLabel}
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col justify-end md:min-w-[200px] lg:min-w-[450px]">
           <Image

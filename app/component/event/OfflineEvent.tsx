@@ -4,6 +4,7 @@ import bg from "../../../public/nasa-foto-snimok-kosmos.jpg";
 import Carousel from "../UI/Carousel";
 import Image from "next/image";
 import Button from "../UI/Button";
+import Link from "next/link";
 
 const data = [
   {
@@ -69,7 +70,13 @@ const OfflineEvent = () => {
         ))}
       </Carousel>
       <div className="py-6 flex justify-center">
-        <Button label="Register Now" />
+        <Link
+          href="https://www.instagram.com/peerhub101?igsh=MWxvZWhlMjkxNzk2MA=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button label="Register Now" />
+        </Link>
       </div>
     </div>
   );
