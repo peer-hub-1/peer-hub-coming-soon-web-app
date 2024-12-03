@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import Footer from "@/app/component/UI/footer";
 // import Navbar from "@/app/component/UI/navbar";
 import "./globals.css";
+import Head from "next/head";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content="PeerHub" />
+        <meta
+          property="og:description"
+          content="PeerHub, the community-driven platform where students connect, collaborate, and create. Join our interest-based clubs on our exclusive app, share ideas, and get inspired by peers across colleges. Our diverse range of clubs, including Tech Clubs, Management Clubs, Metro Clubs, Health Clubs, Law Clubs, and Art Clubs, ensures that there’s a community for everyone."
+        />
+        <meta
+          property="og:image"
+          content="https://www.peerhub.in/PeerHub%20Logo-07.svg"
+        />
+        <meta property="og:url" content="https://www.peerhub.in" />
+        <meta property="og:type" content="website" />
+      </Head>
       <body className={`antialiased bg-navyBlue max-w-[1440px] mx-auto`}>
         {/* <Navbar /> */}
         {children}
