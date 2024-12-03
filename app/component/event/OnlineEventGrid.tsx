@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HighlightText from "../UI/HighlightText";
 import Button from "../UI/Button";
+import Link from "next/link";
 
 export default function OnlineEventGrid() {
   const items = [
@@ -86,7 +87,13 @@ export default function OnlineEventGrid() {
         ))}
       </div>
       <div className="py-6 flex justify-center">
-        <Button label="Join the Event" />
+        <Link
+          href="https://www.instagram.com/peerhub101?igsh=MWxvZWhlMjkxNzk2MA=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button label="Join the Event" />
+        </Link>
       </div>
     </div>
   );

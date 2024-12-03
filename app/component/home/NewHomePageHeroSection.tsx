@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const NewHomePageHeroSection = () => {
   return (
@@ -12,7 +13,7 @@ const NewHomePageHeroSection = () => {
       <div className="flex justify-center items-center gap-4 md:gap-8 mt-8 md:mt-12 p-4 ">
         <div className="flex flex-col gap-5 items-center text-center">
           <h1 className="text-3xl md:text-6xl font-medium font-Berlin text-primaryNavyBlue capitalize">
-            This Hub is not banned!
+            From Side Hustle to Main Gig
           </h1>
           <p className="text-sm md:text-lg text-primaryNavyBlue">
             Welcome to PeerHub, the community-driven platform where students
@@ -22,9 +23,12 @@ const NewHomePageHeroSection = () => {
             Management Clubs, Metro Clubs, Health Clubs, Law Clubs, and Art
             Clubs, ensures that there’s a community for everyone.
           </p>
-          <button className="bg-peerHubOrange rounded-3xl px-4 py-1 text-base text-white w-fit">
+          <Link
+            href="/community"
+            className="bg-peerHubOrange rounded-3xl px-4 py-1 text-base text-white w-fit z-10"
+          >
             Join the Community
-          </button>
+          </Link>
         </div>
       </div>
       <div className="flex max-w-full relative justify-center">

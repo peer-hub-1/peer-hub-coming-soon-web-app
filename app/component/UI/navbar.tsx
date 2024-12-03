@@ -15,7 +15,7 @@ const navigation = [
   { name: "Community", href: "/community", active: true },
   { name: "Knowledge Vault", href: "/knowledge-vault", active: true },
   { name: "Events", href: "/events", active: true },
-  { name: "Download App", href: "/", active: false },
+  { name: "Download App", href: "/Download-App", active: false },
 ];
 
 const Navbar = () => {
@@ -27,12 +27,14 @@ const Navbar = () => {
     >
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <div className="flex flex-1 items-center  sm:justify-start py-1">
+          <div className="flex flex-1 items-center  sm:justify-start py-2">
             <div className="flex flex-shrink-0 items-center">
               <Image
                 alt="Your Company"
-                src="/PeerHub Logo-05.svg"
-                className="h-16 w-16"
+                src="/PeerHub Logo-01.png"
+                className="lg:w-24 w-16 aspect-[4.86] object-contain z-20"
+                priority
+                fetchPriority="high"
                 width={100}
                 height={50}
               />
@@ -60,7 +62,7 @@ const Navbar = () => {
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:hidden">
             {/* Mobile menu button */}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-navyBlue  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Menu
@@ -87,7 +89,7 @@ const Navbar = () => {
               className={classNames(
                 pathname === item.href
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  : "text-navyBlue ",
                 !item.active && "pointer-events-none",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}

@@ -2,6 +2,7 @@ import HighlightText from "../UI/HighlightText";
 import Carousel from "../UI/Carousel";
 import Image from "next/image";
 import Button from "../UI/Button";
+import Link from "next/link";
 
 const data = [
   {
@@ -111,7 +112,13 @@ const FellowshipProgram = () => {
         ))}
       </Carousel>
       <div className="my-6 flex justify-center">
-        <Button label="Explore More" />
+        <Link
+          href="https://www.instagram.com/peerhub101?igsh=MWxvZWhlMjkxNzk2MA=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button label="Explore More" />
+        </Link>
       </div>
     </div>
   );

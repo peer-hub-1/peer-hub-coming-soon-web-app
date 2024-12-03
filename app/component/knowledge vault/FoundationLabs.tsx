@@ -2,6 +2,7 @@ import HighlightText from "../UI/HighlightText";
 import Carousel from "../UI/Carousel";
 import Image from "next/image";
 import Button from "../UI/Button";
+import Link from "next/link";
 
 const data = [
   {
@@ -122,7 +123,13 @@ const FoundationLabs = () => {
         ))}
       </Carousel>
       <div className="py-6 flex justify-center">
-        <Button label="Read More" />
+        <Link
+          href="https://www.instagram.com/peerhub101?igsh=MWxvZWhlMjkxNzk2MA=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button label="Read More" />
+        </Link>
       </div>
     </div>
   );
