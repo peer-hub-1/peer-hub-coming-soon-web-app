@@ -14,7 +14,7 @@ export default function Footer() {
         },
         {
           name: "Legal",
-          href: "/",
+          href: "/peer hub privacy policy.pdf",
         },
         {
           name: "Contact Us",
@@ -212,7 +212,16 @@ export default function Footer() {
         ))}
       </div>
       <div className="border-t border-gray-200 pt-8 text-center text-sm text-gray-500">
-        <p>Terms of use | © 2024 Peerhub All rights reserved</p>
+        <p>
+          <a
+            href="/peer hub privacy policy.pdf"
+            download={true}
+            className="hover:text-gray-900"
+          >
+            Privacy Policy
+          </a>{" "}
+          | © 2024 Peerhub All rights reserved
+        </p>
       </div>
     </footer>
   );
