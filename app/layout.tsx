@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 // import Footer from "@/app/component/UI/footer";
 // import Navbar from "@/app/component/UI/navbar";
 import "./globals.css";
-import Head from "next/head";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -31,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
 
@@ -43,11 +42,11 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://www.peerhub.in/PeerHub%20Logo-07.svg"
+          content="https://www.peerhub.in/PeerHub Logo-07.svg"
         />
         <meta property="og:url" content="https://www.peerhub.in" />
         <meta property="og:type" content="website" />
-      </Head>
+      </head>
       <body className={`antialiased bg-navyBlue max-w-[1440px] mx-auto`}>
         {/* <Navbar /> */}
         {children}
