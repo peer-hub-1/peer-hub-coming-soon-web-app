@@ -34,6 +34,14 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
 
+        <meta
+          name="description"
+          content="PeerHub, the community-driven platform where students connect, collaborate, and create. Join our interest-based clubs on our exclusive app, share ideas, and get inspired by peers across colleges. Our diverse range of clubs, including Tech Clubs, Management Clubs, Metro Clubs, Health Clubs, Law Clubs, and Art Clubs, ensures that there’s a community for everyone."
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+
         {/* Open Graph Metadata */}
         <meta property="og:title" content="PeerHub" />
         <meta
